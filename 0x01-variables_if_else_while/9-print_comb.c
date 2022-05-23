@@ -13,9 +13,9 @@ int main(void)
 	{
 		putchar(z);
 	}
-	if (z == 8)
+	if (z == 9)
 	{
-		(z++);
+		break;
 	}
 	else
 	{
