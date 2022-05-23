@@ -10,13 +10,12 @@ int main(void)
 	int z;
 
 	for (z = '0'; z <= '9'; z++)
-	if (z == 9)
-	{
-		break;
-	}
-	else
 	{
 		putchar(z);
+	if (z == 9)
+		break;
+
+	else
 		putchar(',');
 		putchar(' ');
 	}
