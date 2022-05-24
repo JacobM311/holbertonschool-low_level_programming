@@ -12,11 +12,11 @@ int main(void)
 	for (z = 'a'; z <= 'z'; z++)
 		if (z == 'q')
 		{
-			(z++);
+			return;
 		}
 		else if (z == 'e')
 		{
-			(z++);
+			return;
 		}
 	{
 		putchar(z);
