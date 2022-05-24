@@ -10,11 +10,10 @@ int main(void)
 	int z;
 
 	for (z = '0'; z <= '9'; z++)
-		if (z == 9)
+		if (z != 9)
 		{
 		putchar(z);
 		}
-		else
 	{
 		putchar(z);
 		putchar(',');
