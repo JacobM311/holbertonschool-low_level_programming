@@ -9,13 +9,13 @@ int main(void)
 {
 	int z;
 
-	for (z = '0'; z <= '9'; z++)
+	for (z = '0'; z <= '10'; z++)
 	{
 		putchar(z);
 	}
 	if (z == 9)
 	{
-		break;
+		putchar(z);
 	}
 	else
 	{
