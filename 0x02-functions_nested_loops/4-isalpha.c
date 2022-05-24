@@ -12,7 +12,7 @@ if (c >= 'a' && c <= 'z')
 }
 else if
 {		
-	if (c >= 'A' && c <= 'Z')
+	(c >= 'A' && c <= 'Z')
 	{
 
 		return (1);
