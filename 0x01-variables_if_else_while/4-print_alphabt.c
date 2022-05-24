@@ -5,18 +5,18 @@
  *
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
 	int z;
 
 	for (z = 'a'; z <= 'z'; z++)
-	{
-	if ( z != 'e' && z != 'q' )
-	{
+{
+	if (z != 'e' && z != 'q')
+{
 	putchar(z);
-
+}
+}
 	putchar('\n');
-	}
-	}
+
 	return (0);
 }
