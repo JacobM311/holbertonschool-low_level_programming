@@ -10,19 +10,13 @@ int main()
 	int z;
 
 	for (z = 'a'; z <= 'z'; z++)
-		if (z == 'q')
-		{
-			return;
-		}
-		else if (z == 'e')
-		{
-			return;
-		}
 	{
-		putchar(z);
+	if ( z != 'e' && z != 'q' )
+	{
+	putchar(z);
+
+	putchar('\n');
 	}
-	{
-		putchar('\n');
 	}
 	return (0);
 }
