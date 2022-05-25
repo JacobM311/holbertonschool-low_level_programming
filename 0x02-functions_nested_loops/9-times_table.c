@@ -3,7 +3,7 @@
 /**
  * times_table - dfgj
  *
- * Return: Always 0.
+ * Return: void
  */
 
 void times_table(void)
@@ -20,13 +20,13 @@ void times_table(void)
 			_putchar(',');
 			_putchar(' ');
 			prod = num * mult;
-			if (prod == num * multi)
+			if (prod == num * mult)
 			{
 
-			if (prod <= 9)
-			{
+				if (prod <= 9)
+				{
 				_putchar(' ');
-			}
+				}
 				else
 				{
 					_putchar('0' + (prod / 10));
