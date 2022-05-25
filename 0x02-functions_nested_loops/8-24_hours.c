@@ -14,7 +14,7 @@ for (h = 0; h < 24; h++)
 	{
 		-putchar((h / 10) + '0');
 		-putchar((h % 10) + '0');
-		-putchar((':');
+		-putchar(':');
 		-putchar((h / 10) + '0');
 		-putchar((h % 10) + '0');
 		-putchar('\n');
