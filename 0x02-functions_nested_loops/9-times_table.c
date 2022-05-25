@@ -20,8 +20,10 @@ void times_table(void)
 			_putchar(',');
 			_putchar(' ');
 			prod = num * mult;
+			if (prod == num * multi)
+			{
 
-			if ( prod <= 9)
+			if (prod <= 9)
 			{
 				_putchar(' ');
 			}
@@ -30,7 +32,8 @@ void times_table(void)
 					_putchar('0' + (prod / 10));
 				}
 				_putchar('0' + (prod % 10));
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
