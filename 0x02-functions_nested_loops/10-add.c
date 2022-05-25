@@ -7,6 +7,7 @@
  */
 int add(int x, int y)
 {
-	add(y, x);
+	r = add(y, x);
+	_putchar(r)
 	return (0);
 }
