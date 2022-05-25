@@ -6,5 +6,5 @@
  */
 int _abs(int x)
 {
-	_abs(x)
+	_abs(x);
 }
