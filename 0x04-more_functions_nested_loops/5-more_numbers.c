@@ -1,9 +1,15 @@
 #include "main.h"
 
+/**
+ * more_numbers-more numbers
+ *
+ */
+
 void more_numbers(void)
 {
 	char str[] = "01234567891011121314\n";
 	int i, x;
+
 	x = 0;
 	i = 0;
 
