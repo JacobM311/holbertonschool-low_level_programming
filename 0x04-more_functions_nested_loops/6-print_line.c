@@ -11,13 +11,14 @@ int x;
 x = 0;
 	if (n > 0)
 	{
+		_putchar(n);
 		while (x < n)
 		{
 			_putchar('_');
 			x++;
 		}
 	}
-	else if (n <= 0)
+	else
 	{
 		_putchar('\n');
 	}
