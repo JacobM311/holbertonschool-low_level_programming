@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * _isupper-is upper
+ * @c: yes
+ * Return: yes.
+ */
+
 int _isupper(int c)
 
 {
