@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * print_diagonal - jfksf
+ * @n: yes
+ */
+
 void print_diagonal(int n)
 {
 
@@ -23,7 +28,7 @@ j = 0;
 
 	}
 	else if (n <= 0)
-                {
-                        _putchar('\n');
-                }
+		{
+		_putchar('\n');
+		}
 }
