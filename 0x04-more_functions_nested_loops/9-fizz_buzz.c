@@ -3,6 +3,7 @@
 
 int main(void)
 {
+int x;
 	for  (x = 0; x <= 100; x++)
 	{
 		if (x % 15 == 0)
