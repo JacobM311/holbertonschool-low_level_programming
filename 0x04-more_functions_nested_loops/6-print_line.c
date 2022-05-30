@@ -16,10 +16,10 @@ x = 0;
 			_putchar('_');
 			x++;
 		}
+		_putchar('\n')
 	}
-	else
+	if (n <= 0)
 	{
 		_putchar('\n');
 	}
-		_putchar('\n');
 }
