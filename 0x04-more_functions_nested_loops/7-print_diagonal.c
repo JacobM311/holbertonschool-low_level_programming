@@ -11,12 +11,12 @@ if (n > 0)
 	for (i = 0; i < n; i++)
 	{
 		for (j = 0; j < n; j++)
-	{
-		if (j == i)
-		_putchar(x);
-		else
-		_putchar(' ');
-	}
+		{
+			if (j == i)
+			_putchar(x);
+			else
+			_putchar(' ');
+		}
 	_putchar('\n');
 	}
 }
