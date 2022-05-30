@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * print_line-print line
+ * @n: yes
+ */
+
 void print_line(int n)
 {
 int x;
