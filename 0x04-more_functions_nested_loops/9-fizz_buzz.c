@@ -24,7 +24,7 @@ int x;
 		}
 		else if (x == 100)
 		{
-			printf("Buzz"
+			printf("Buzz");
 		}
 		else
 		{
