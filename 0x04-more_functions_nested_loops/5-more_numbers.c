@@ -7,13 +7,18 @@ void more_numbers(void)
 	x = 0;
 	i = 0;
 
-	if (x < 10)
+	while (x < 10)
 	{
 		while (str[i] != '\0')
 		{
 			_putchar(str[i]);
 			i++;
 		}
+		while (i > 0)
+		{
+			i--;
+		}
 	x++;
 	}
+_putchar('\n');
 }
