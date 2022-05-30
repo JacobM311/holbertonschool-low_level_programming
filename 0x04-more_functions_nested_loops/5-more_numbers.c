@@ -20,5 +20,4 @@ void more_numbers(void)
 		}
 	x++;
 	}
-_putchar('\n');
 }
