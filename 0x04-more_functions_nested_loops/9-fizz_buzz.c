@@ -23,4 +23,5 @@ int x;
 			printf("%d ", x);
 		}
 	}
+return (0);
 }
