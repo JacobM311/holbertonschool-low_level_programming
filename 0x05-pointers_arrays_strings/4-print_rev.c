@@ -5,16 +5,17 @@
  * @s: yes
  */
 
-void print_rev(char *s, char *b)
+void print_rev(char *s)
 {
-	if (*s != '\0')
+	int len = 0;
+
+	while (s[t] != '\0')
 	{
-		print_rev(s + 1, b);
-		_putchar(*s);
-		if (s == b)
-		{
-			_putchar('\n');
-		}
+		len++;
 	}
-	
+	for (len = len -1; len >= 0; len--)
+	{
+		_putchar(s[len]);
+	}
+_putchar('\n');
 }
