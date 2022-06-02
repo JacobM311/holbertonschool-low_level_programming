@@ -13,7 +13,7 @@ if (n > 0)
 {
 	for (x = 0; x < n - 1; x++)
 	{
-		printf("%d ,", a[x]);
+		printf("%d, ", a[x]);
 	}
 	for (x = n - 1; x < n; x++)
 	{
