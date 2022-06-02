@@ -1,9 +1,24 @@
-#include "main.h"
+#include <stdio.h>
+
+/**
+ * print_array- prints array of int's
+ * @a: yes
+ * @n: yes
+ */
 
 void print_array(int *a, int n)
 {
-	for (x = 0; x > n; x++)
+	int x = 0;
+
+	if (x != n)
 	{
-		printf("%d" , a[x]);
+		for (x = 0; x > n; x++)
+		{
+			printf("%d ,", a[x]);
+		}
+	}
+	else
+	{
+		 printf("%d", a[x]);
 	}
 }
