@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * rev_string-hekko
+ * @s: yes
+ */
+
 void rev_string(char *s)
 {
 	int b;
