@@ -4,6 +4,7 @@
  * reverse_array-yes
  * @a: yes
  * @n: yes
+ * Return: 0.
  */
 
 void reverse_array(int *a, int n)
