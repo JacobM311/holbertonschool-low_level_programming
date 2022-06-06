@@ -1,5 +1,12 @@
 #include "holberton.h"
 
+/**
+ * _strncat-yes
+ * @dest: yes
+ * @src: yes
+ * @n: yes
+ */
+
 char *_strncat(char *dest, char *src, int n)
 
 {
@@ -16,7 +23,7 @@ while (j < n)
 {
 	if (src[j])
 	{
-		dest[i + j] = src[j];
+		dest[i] = src[j];
 		j++;
 		i++;
 	}
