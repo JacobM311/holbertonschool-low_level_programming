@@ -4,6 +4,7 @@
  * string_toupper-yes
  * @c: yes
  * Return: yes
+ */
 
 char *string_toupper(char *c)
 
