@@ -5,6 +5,7 @@
  * @s1: yes
  * @s2: yes
  * Return: yes
+ */
 
 int _strcmp(char *s1, char *s2)
 
