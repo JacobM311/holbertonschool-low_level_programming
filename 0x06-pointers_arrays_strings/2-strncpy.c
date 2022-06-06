@@ -1,5 +1,13 @@
 #include "holberton.h"
 
+/**
+ * _strncpy-yes
+ * @dest: yes
+ * @src: yes
+ * @n:yes
+ * Return: yes
+ */
+
 char *_strncpy(char *dest, char *src, int n)
 
 {
@@ -10,5 +18,5 @@ char *_strncpy(char *dest, char *src, int n)
 	for ( ; i < n; i++)
 	dest[i] = '\0';
 
-	return dest;
+	return (dest);
 }
