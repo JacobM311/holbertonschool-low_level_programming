@@ -1,5 +1,10 @@
 #include "holberton.h"
 
+/**
+ * cap_string-yes
+ * @c: yes
+ * Return: yes
+ */
 
 char *cap_string(char *c)
 
