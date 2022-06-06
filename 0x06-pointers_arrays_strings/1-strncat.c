@@ -3,12 +3,14 @@
 char *_strncat(char *dest, char *src, int n)
 
 {
-int i;
-int j;
+int i = 0;
+int j = 0;
 
-for (i = 0; dest[i] != '\0'; i++)
+while (dest[i])
 {
+	i++;
 }
+
 
 while (j < n)
 {
@@ -16,6 +18,7 @@ while (j < n)
 	{
 		dest[i + j] = src[j];
 		j++;
+		i++;
 	}
 	else
 	{
@@ -23,6 +26,6 @@ while (j < n)
 	}
 }
 
-
 return (dest);
+
 }
