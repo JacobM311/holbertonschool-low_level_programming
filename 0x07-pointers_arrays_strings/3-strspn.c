@@ -4,6 +4,7 @@
  * int_strspn-yes
  * @s: yes
  * @accept: yes
+ * Return: yes
  */
 
 unsigned int _strspn(char *s, char *accept)
