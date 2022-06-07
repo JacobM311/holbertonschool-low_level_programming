@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * _strpbrk-yes
+ * @s: yes
+ * @accept: yes
+ * Return: yes
+ */
+
 char *_strpbrk(char *s, char *accept)
 {
 	int i, j;
