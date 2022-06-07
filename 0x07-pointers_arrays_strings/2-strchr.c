@@ -1,10 +1,16 @@
 #include "main.h"
 
+/**
+ * _strchr-yes
+ * @s: yes
+ * @c: yes
+ */
+
 char *_strchr(char *s, char c)
 {
 	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[i])
 	{
 		if (*s == c)
 		{
@@ -12,5 +18,5 @@ char *_strchr(char *s, char c)
 		
 		}
 	}
-	return ('\0');
+	return ('\0'i);
 }
