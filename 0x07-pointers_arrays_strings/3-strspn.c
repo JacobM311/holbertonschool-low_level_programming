@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int_strspn-yes
+ * _strspn-yes
  * @s: yes
  * @accept: yes
  * Return: yes
