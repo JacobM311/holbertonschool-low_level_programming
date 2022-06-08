@@ -1,6 +1,13 @@
 #include "main.h"
 #include<stddef.h>
 
+/**
+ * _strstr-yes
+ * @haystack: yes
+ * @needle: yes
+ * Return: yes
+ */
+
 char *_strstr(char *haystack, char *needle)
 {
 	const char *a;
@@ -8,24 +15,24 @@ char *_strstr(char *haystack, char *needle)
 
 	b = needle;
 
-	if (*b == 0) 
+	if (*b == 0)
 	{
 		return (haystack);
 	}
-	for ( ; *haystack != 0; haystack++) 
+	for ( ; *haystack != 0; haystack++)
 	{
 		if (*haystack != *b)
 		{
 			continue;
 		}
 		a = haystack;
-		while (1) 
+		while (1)
 		{
 			if (*b == 0)
 			{
 				return (haystack);
 			}
-			if (*a++ != *b++) 
+			if (*a++ != *b++)
 			{
 				break;
 			}
