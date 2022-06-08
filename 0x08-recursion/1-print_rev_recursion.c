@@ -3,6 +3,7 @@
 /**
  * @s: yes
  * _print_rev_recursion-yes
+ * Return: yes
  */
 
 void _print_rev_recursion(char *s)
