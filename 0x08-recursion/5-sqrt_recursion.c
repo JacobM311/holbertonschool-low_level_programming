@@ -1,15 +1,34 @@
 #include "main.h"
 
+/**
+ * _sqrt-gets square root of number
+ * @i: yes
+ * @j: yes
+ *
+ * Return: square root.
+ */
 
 int _sqrt(int i, int j)
 {
-	int _k = (i + j / i) / 2;
-
-	if (i * i <= j && (i + 1) * (i + 1) > j)
+	if (i * i == j)
+	{
 		return (i);
+	}
+	else if (i * i > j)
+	{
+		return (-1);
+	}
 	else
-		return (_sqrt(_k, j));
+	{
+		return (_sqrt(i + 1, j));
+	}
 }
+
+/**
+ * _sqrt_recursion-square root
+ * @n: yes
+ * Return: square root
+ */
 
 int _sqrt_recursion(int n)
 {
