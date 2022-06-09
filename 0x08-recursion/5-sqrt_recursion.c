@@ -1,14 +1,14 @@
 #include "main.h"
 
 
-int _sqrt(int i, int n)
+int _sqrt(int i, int j)
 {
-	int _k = (i + n / i) / 2;
+	int _k = (i + j / i) / 2;
 
-	if (i * i <= n && (i + 1) * (i + 1) > n)
+	if (i * i <= j && (i + 1) * (i + 1) > j)
 		return (i);
 	else
-		return (_sqrt(_k, n));
+		return (_sqrt(_k, j));
 }
 
 int _sqrt_recursion(int n)
