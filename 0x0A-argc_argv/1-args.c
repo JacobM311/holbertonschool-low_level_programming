@@ -8,18 +8,12 @@
  */
 
 
-int main (int argc, __attribute__((unused)) char *argv[])
+int main(int argc, __attribute__((unused)) char *argv[])
 {
-  int count = 1;
 
-  if (argc > 1)
-    {
-      while (count < argc)
-	{
-	  count++;
-	}
-      printf("%d\n", count - 1);
-    }
-
-  return (0);
+if (argc > 0)
+{
+	printf("%d\n", argc - 1);
+}
+return (0);
 }
