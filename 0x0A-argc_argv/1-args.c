@@ -1,16 +1,25 @@
 #include <stdio.h>
 
-int main (int argc, char *argv[])
+/**
+ * main - function
+ * @argc: number arguments passed to the program
+ * @argv: string array of arguments passed to te program
+ * Return: 0
+ */
+
+
+int main (int argc, __attribute__((unused)) char *argv[])
 {
-  int count;
+  int count = 1;
 
   if (argc > 1)
     {
-      for (count = 1; count < argc; count++)
+      while (count < argc)
 	{
-	  printf("%d", count);
+	  count++;
 	}
+      printf("%d\n", count - 1);
     }
 
-  return 0;
+  return (0);
 }
