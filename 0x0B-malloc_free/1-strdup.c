@@ -19,11 +19,14 @@ char *_strdup(char *str)
 	static char *dup;
 	char *dup_offset;
 
+	if( str == 0)
+        return(NULL);
+	
 	/* Allocate memory for duplicate */
 	str_size = _strlen(str);
 	dup = (char *)malloc(sizeof(char)*str_size+1);
-	if( str == NULL)
-	return(NULL);
+	if (dup == 0)
+		return (NULL);
 
 	    /* Copy string */
 	dup_offset = dup;
