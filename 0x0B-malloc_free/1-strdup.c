@@ -1,6 +1,17 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+int _strlen(char *s)
+{
+        int len = 0;
+
+        while (*s != '\0')
+        {
+                s++;
+                len++;
+        }
+        return (len);
+}
 
 char *_strdup(char *str)
 {
@@ -25,16 +36,4 @@ char *_strdup(char *str)
 	*dup_offset = '\0';
 
 return(dup);
-}
-
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (*s != '\0')
-	{
-		s++;
-		len++;
-	}
-	return (len);
 }
