@@ -3,22 +3,28 @@
 #include <stdlib.h>
 
 /**
- * _strdup - returns pointer cotaining copy of string
- * @str: string being copied
- * Return: pointer to string or NULL
+ * _strlen - gets length of string
+ * @s: string
+ * Return: length
  */
 
 int _strlen(char *s)
 {
-        int len = 0;
+	int len = 0;
 
-        while (*s != '\0')
-        {
-                s++;
-                len++;
-        }
-        return (len);
+	while (*s != '\0')
+	{
+		s++;
+		len++;
+	}
+	return (len);
 }
+
+/**
+ * _strdup - returns pointer cotaining copy of string
+ * @str: string being copied
+ * Return: pointer to string or NULL
+ */
 
 char *_strdup(char *str)
 {
@@ -26,18 +32,18 @@ char *_strdup(char *str)
 	static char *dup;
 	char *dup_offset;
 
-	if( str == 0)
-        return(NULL);
-	
+	if (str == 0)
+	return (NULL);
+
 	/* Allocate memory for duplicate */
 	str_size = _strlen(str);
-	dup = (char *)malloc(sizeof(char)*str_size+1);
+	dup = (char *)malloc(sizeof(char) * str_size + 1);
 	if (dup == 0)
 		return (NULL);
 
-	    /* Copy string */
+	/* Copy string */
 	dup_offset = dup;
-	while(*str)
+	while (*str)
 	{
 		*dup_offset = *str;
 		dup_offset++;
@@ -45,5 +51,5 @@ char *_strdup(char *str)
 	}
 	*dup_offset = '\0';
 
-return(dup);
+return (dup);
 }
