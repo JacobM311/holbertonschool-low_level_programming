@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
+/**
+ * _strdup - returns pointer cotaining copy of string
+ * @str: string being copied
+ * Return: pointer to string or NULL
+ */
+
 int _strlen(char *s)
 {
         int len = 0;
