@@ -23,9 +23,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 
 	if (n >= strlen(s2))
-                n = strlen(s2);
+		n = strlen(s2);
 
-	a = malloc(sizeof(char) * (s1len + n + 1));
+	a = malloc(sizeof(char) * (s1len + strlen(s2) + 1));
 
 	junk = malloc(5);
 	free(junk);
