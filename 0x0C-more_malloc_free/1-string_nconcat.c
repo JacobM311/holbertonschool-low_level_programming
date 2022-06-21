@@ -41,9 +41,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			a[i] = s1[i];
 		}
-		else
+		if (i >= s1len)
 		{
-			a[i] = s2[x++];
+			a[i] = s2[x];
+			x++;
 		}
 		i++;
 	}
