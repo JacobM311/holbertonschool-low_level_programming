@@ -7,6 +7,7 @@
  * *str_concat - concatenates 2 strings
  * @s1: string
  * @s2: string
+ * @n: bytes of s2
  * Return: concatenated string.
  */
 
@@ -25,18 +26,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (a == NULL)
 		return (NULL);
+
+	if (n >= strlen(s2))
+	{
+		n = strlen(s2);
+	}
+
 	while (*s1)
 	{
-		a[i] = *s1;
-		i++;
+		a[i++] = *s1;
 		s1++;
 	}
 
 	while (x <= n) 
 	{
-		a[i] = s2[x];
-		x++;
-		i++;
+		a[i++] = s2[x++];
 	}
 return (a);
 }
