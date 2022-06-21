@@ -22,6 +22,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
+	if (n >= strlen(s2))
+                n = strlen(s2);
+
 	a = malloc(sizeof(char) * (s1len + n + 1));
 
 	junk = malloc(5);
@@ -29,9 +32,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (a == NULL)
 		return (NULL);
-
-	if (n >= strlen(s2))
-		n = strlen(s2);
 
 	while (i < (s1len + n))
 	{
