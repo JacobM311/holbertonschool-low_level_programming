@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * print_name - prints name
+ * @f: function to be used on name
+ * @name: array to be printed with f
+ */
+
 void print_name(char *name, void (*f)(char *))
 {
 	if (name == NULL || f == NULL)
