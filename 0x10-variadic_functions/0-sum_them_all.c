@@ -1,6 +1,11 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
+/**
+ * sum_them_all - returns sum of all ints passed
+ * @n: variable to be passed int's
+ * Return: sum of all int's.
+ */
 
 
 int sum_them_all(const unsigned int n, ...)
