@@ -4,51 +4,49 @@
 #include <stdarg.h>
 
 /**
- * print_all - prints char, string, int, or char
+ * print_all - prints char, string, int, or float
  * @format: what type to print
- *
- *
  */
 
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	int space;
+	int flag;
 	char *string;
 
-	va_list ap;
+	va_list var;
 
-	va_start(ap, format);
+	va_start(var, format);
 
 		while (format && format[i])
 		{
-			space = 0;
+			flag = 0;
 			switch (format[i])
 			{
 				case 'c':
-					printf("%c", va_arg(ap, int));
-					space = 1;
+					printf("%c", va_arg(var, int));
+					flag = 1;
 					break;
 				case 'i':
-					printf("%d", va_arg(ap, int));
-					space = 1;
+					printf("%d", va_arg(var, int));
+					flag = 1;
 					break;
 				case 'f':
-					printf("%f", va_arg(ap, double));
-					space = 1;
+					printf("%f", va_arg(var, double));
+					flag = 1;
 					break;
 				case 's':
-					string = va_arg(ap, char *);
+					string = va_arg(var, char *);
 					if (string == NULL)
 						string = "(nil)";
 					printf("%s", string);
-					space = 1;
+					flag = 1;
 					break;
 			}
-			if (space == 1 && format[i + 1])
+			if (flag == 1 && format[i + 1])
 				printf(", ");
 			i++;
 		}
-	va_end(ap);
+	va_end(var);
 	printf("\n");
 }
