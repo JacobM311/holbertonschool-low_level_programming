@@ -1,5 +1,4 @@
 #include "lists.h"
-#include "_strlen.c"
 
 /**
  * add_node - adds node to the end of linked list
@@ -33,4 +32,16 @@ list_t *add_node(list_t **head, const char *str)
 	*head = newnode;
 
 	return (newnode);
+}
+
+int _strlen(char *s)
+{
+int i = 0;
+
+	while (*s != '\0')
+	{
+		i++;
+		s++;
+	}
+return (i);
 }
