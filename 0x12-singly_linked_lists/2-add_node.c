@@ -34,6 +34,12 @@ list_t *add_node(list_t **head, const char *str)
 	return (newnode);
 }
 
+/**
+ * _strlen - Entry point
+ * @s: Point to the string
+ * Return: length of string
+ */
+
 int _strlen(char *s)
 {
 int i = 0;
