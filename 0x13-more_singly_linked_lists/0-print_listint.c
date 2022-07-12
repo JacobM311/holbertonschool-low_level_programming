@@ -1,5 +1,11 @@
 #include "lists.h"
 
+/**
+ * printlistint - prints list of listint_t int
+ * @h: pointer to int to be printed
+ * Return: number of nodes.
+ */
+
 size_t print_listint(const listint_t *h)
 {
 	int count = 0;
