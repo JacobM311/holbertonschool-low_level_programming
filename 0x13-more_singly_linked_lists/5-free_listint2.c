@@ -1,5 +1,10 @@
 #include "lists.h"
 
+/**
+ * free_listint2 - same thing as the first one
+ * @head: double pointer
+ */:
+
 void free_listint2(listint_t **head)
 {
 	listint_t *temp;
