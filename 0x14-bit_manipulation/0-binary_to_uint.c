@@ -1,6 +1,12 @@
 #include "main.h"
 #include "_pow.c"
 
+/**
+ * binary_to_uint - converts a binary number to a decimal
+ * @b: ponter to a string containing the binary number to convert
+ * Return: the converted number
+ */
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int i, j = 0, decimal = 0;
