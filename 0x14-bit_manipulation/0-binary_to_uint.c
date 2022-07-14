@@ -10,10 +10,8 @@ unsigned int binary_to_uint(const char *b)
 
 	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (b[i] != '0' || b[i] != '1' || b[i] == '\0')
-		{
+		if (((b[i]) != '0') && ((b[i]) != '1') && ((b[i]) != '\0'))
 			return (0);
-		}
 	}
 
 	i = i - 1;
