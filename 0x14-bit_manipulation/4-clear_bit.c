@@ -10,13 +10,11 @@
 
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	int tmp;
 
 	if (index > (sizeof(*n) * 8))
 		return (-1);
 
-	tmp = 1 << index;
-	*n &= ~tmp;
+	*n &= ~1 << index;
 	return (1);
 
 }
