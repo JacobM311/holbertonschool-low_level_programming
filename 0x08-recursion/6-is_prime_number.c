@@ -6,6 +6,13 @@
  * Return: 0 or 1.
  */
 
+int get_prime(int num, int i)
+{
+       if(num % i == 0)
+         return (1);
+       else
+         get_prime(num, i - 1);
+}
 
 int is_prime_number(int n)
 
@@ -14,6 +21,5 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	if (n % 1 == 0 && n % n == 0)
-		return (1);
+	return (get_prime(1, n));
 }

@@ -5,3 +5,4 @@ int **alloc_grid(int width, int height);
 void free_grid(int **grid, int height);
 void simple_print_buffer(char *buffer, unsigned int size);
 int main(void);
+int _strlen(char *s);

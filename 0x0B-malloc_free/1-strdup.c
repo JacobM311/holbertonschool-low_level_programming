@@ -30,23 +30,23 @@ char *_strdup(char *str)
 {
 	int str_size;
 	static char *dup;
-	char *dup_offset;
+	char *temp;
 
 	if (str == 0)
 	return (NULL);
 
 	/* Allocate memory for duplicate */
 	str_size = _strlen(str);
-	dup = (char *)malloc(sizeof(char) * str_size + 1);
+	dup = malloc(sizeof(char) * str_size + 1);
 	if (dup == 0)
 		return (NULL);
 
 	/* Copy string */
-	dup_offset = dup;
+	temp = dup;
 	while (*str)
 	{
-		*dup_offset = *str;
-		dup_offset++;
+		*temp = *str;
+		temp++;
 		str++;
 	}
 	*dup_offset = '\0';
