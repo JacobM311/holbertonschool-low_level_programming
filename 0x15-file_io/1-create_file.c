@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * create_file - creates a file
+ * @filename: file to be created
+ * @text_content: content to be passed to file
+ * Return: 1.
+ */
+
 int create_file(const char *filename, char *text_content)
 {
 	int fd, fw, length;
@@ -19,8 +26,26 @@ int create_file(const char *filename, char *text_content)
 	fw = write(fd, text_content, length);
 
 	if (fd == -1 || fw == -1)
-		return(-1);
+		return (-1);
 
-	close(fo);
-	return(1);
+	close(fd);
+	return (1);
+}
+
+/**
+ * _strlen - get length of string
+ * @c: string
+ * Return: int length of string
+ */
+
+int _strlen(char *c)
+{
+	int i = 0;
+
+	while (*c != '\0')
+	{
+		i++;
+		c++;
+	}
+return (i);
 }
