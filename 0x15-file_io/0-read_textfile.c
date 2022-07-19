@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * read_textfile - reads a file a writes to stdout
+ * @filename: file to be read
+ * @letters: amount of letters available to be read
+ */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
@@ -9,7 +15,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	fd = open (filename, 0_RDONLY);
+	fd = open(filename, 0_RDONLY);
 
 	if (fd == -1)
 	{
@@ -24,7 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	length = read(fd, buffer, letters);
 
-	print = write(STDOUTT_FILENO, buffer, length):
+	print = write(STDOUTT_FILENO, buffer, length);
 
 	if (length == -1 || print == -1)
 	{
