@@ -20,7 +20,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	fd = open(filename, O_WRONLY | O_APPEND);
 
-	fw = write(fd, text_content, length)
+	fw = write(fd, text_content, length);
 
 	if (fd == -1 || fw == -1)
 		return (-1);
@@ -39,7 +39,7 @@ int _strlen(char *c)
 {
 	int i = 0;
 
-	while (c != '\0')
+	while (*c != '\0')
 	{
 		c++;
 		i++;
