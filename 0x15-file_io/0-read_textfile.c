@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
- * read_textfile - reads a file a writes to stdout
+ * read_textfile - reads a file and writes to stdout
  * @filename: file to be read
  * @letters: amount of letters available to be read
+ * Return: letters
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd;
+	int fd, print, buffer, length;
 
 	if (filename == NULL)
 	{
