@@ -1,4 +1,10 @@
-#include "hash_tables.h"
+#include "hash_tables.h"i
+
+/**
+ * hash_djb2 - algorithm
+ * @str: string
+ * Return: hash.
+ */
 
 
 unsigned long int hash_djb2(const unsigned char *str)
